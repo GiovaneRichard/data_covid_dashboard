@@ -78,6 +78,15 @@ body {
     transition: var(--transition);
 }
 
+section {
+    background-color: var(--clr-card);
+    transition: var(--transition);
+    box-shadow: var(--shadow-card);
+    padding: 1.6rem;
+    margin: 1.6rem;
+    border-radius: 1rem;
+}
+
 
 /**********************************/
 /* 2. Navbar
@@ -260,7 +269,38 @@ state-select-list_search::placeholder {
 /* 6. Status
 /**********************************/
 
+.status {
+    display: flex;
+    align-items: center;
+    min-height: 12rem;
+}
 
+.status__icon {
+    font-size: 3.6rem;
+    margin-right: .8rem;
+}
+
+.info {
+    font: var(--ts-caption);
+    text-transform: uppercase;
+}
+
+.status__icon--confirmed, .info__total--confirmed {
+    color: var(--clr-confirmed);
+    transition: var(--transition);
+}
+.status__icon--deaths, .info__total--deaths {
+    color: var(--clr-deaths);
+    transition: var(--transition);
+}
+.status__icon--vaccinated-1, .info__total--vaccinated-1 {
+    color: var(--clr-vaccinated-1);
+    transition: var(--transition);
+}
+.status__icon--vaccinated-2, .info__total--vaccinated-2 {
+    color: var(--clr-vaccinated-2);
+    transition: var(--transition);
+}
 
 /**********************************/
 /* 7. Data Box
